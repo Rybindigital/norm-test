@@ -1,0 +1,14 @@
+{
+  "overview": "Overview",
+  "editors": "Editors",
+  "devtools": "DevTools",
+  "preview": "Preview",
+  "task": "Task",
+  "terminal": "Terminal",
+  "interactive-readme": "Interactive Readme",
+  "commandpalette": "Command Palette",
+  "shortcuts": "Keyboard Shortcuts",
+  "tasks": "Task Configuration",
+  "secrets": "Environment variables",
+  "limitations": "Workspace limitations"
+}

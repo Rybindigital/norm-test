@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 0 1rem 0;
+}
+
+.tabList {
+  flex-shrink: 0;
+  display: flex;
+  border-bottom: 2px solid var(--docs-dark-bg);
+}
+
+.tabTrigger {
+  all: unset;
+  padding: 10px 15px;
+  margin: 0 20px 0 0;
+  line-height: 1;
+  user-select: none;
+  font-weight: 600;
+  opacity: 0.5;
+  margin-bottom: -2px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 80ms ease, color 80ms ease;
+}
+
+@media (max-width: 640px) {
+  .tabTrigger {
+    padding: 10px 5px;
+  }
+}
+
+.tabTrigger:hover,
+.tabTrigger:focus {
+  opacity: 1;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.tabTrigger[data-state="active"] {
+  border-bottom: 2px solid var(--docs-accent-color);
+  opacity: 1;
+}
+
+.tabContent {
+  padding: 1rem 0 0 0;
+}
+
+.tabContent > h1:first-child,
+.tabContent > h2:first-child,
+.tabContent > h3:first-child,
+.tabContent > h4:first-child,
+.tabContent > ul:first-child,
+.tabContent > ol:first-child {
+  margin-top: 1rem;
+}
+
+.light .tabTrigger[data-state="active"] {
+  color: #0e0e0e;
+}
+
+.dark .tabTrigger[data-state="active"] {
+  color: #fff;
+}
